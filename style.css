@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -26,7 +32,6 @@ button[type="submit"]{
     border-radius: 5px;
     border: 1px solid hsl(212, 77%, 62%);
     background-color: hsl(265, 73%, 59%);
-    border: none;
     cursor: pointer;
     
 }
@@ -56,10 +61,16 @@ p{
     margin: 5px 0;
 }
 
-.cityinput, .tempdisplay{
+.cityinput {
     font-weight: bold;
     font-size: 2.5rem;
     color: hsl(341, 93%, 61%);
+}
+
+.tempdisplay {
+    font-weight: bold;
+    font-size: 2rem;
+    color: hsl(210, 11%, 15%);
 }
 
 .humiditydisplay{
@@ -82,3 +93,38 @@ p{
     font-weight: bold;
     color: hsla(313, 92%, 67%, 0.062);
 }
+
+/* Add this to the bottom to style your favorites layout */
+.favorites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px; /* Matches your .cityInput width */
+    margin-top: 20px;
+}
+
+.favorite-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.remove-fav-btn {
+    background-color: hsl(0, 75%, 50%);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+
+   
+    
