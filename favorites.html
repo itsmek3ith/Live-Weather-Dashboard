@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Radar - Favorites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div class="dashboard-container">
+        
+       
+        <header class="main-header">
+            <div class="brand">🌤️ Weather Radar</div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">Dashboard</a>
+                <a href="favorites.html" class="nav-item active">My Favorites</a>
+            </nav>
+        </header>
+
+       
+        <main class="dashboard-main" style="padding: 2rem;">
+            <div style="margin-bottom: 1.5rem;">
+                <h2 style="color: #6c5ce7; margin-bottom: 0.3rem;">Your Saved Cities</h2>
+                <p style="font-size: 0.9rem; color: #aaa;">Click a saved location row below to pull up its live Open-Meteo stats on the homepage.</p>
+            </div>
+
+           
+            <div id="favorites-list" style="display: flex; flex-direction: column; gap: 12px;">
+                
+                <p style="text-align: center; color: #b2bec3; padding: 2rem 0;">No bookmarked locations added yet.</p>
+            </div>
+        </main>
+
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

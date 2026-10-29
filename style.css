@@ -1,0 +1,84 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://cdn.dribbble.com/userupload/45695205/file/2f7389d6077a67235bf5d799c315773c.png?resize=2048x1536&vertical=center');
+}
+
+.weatherform{
+    margin:30px;
+}
+
+.cityinput{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid hsl(249, 75%, 49%);
+    width: 200px;
+    font-size: 2rem;
+}
+
+button[type="submit"]{
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid hsl(212, 77%, 62%);
+    background-color: hsl(265, 73%, 59%);
+    border: none;
+    cursor: pointer;
+    
+}
+
+button[type="submit"]:hover{
+    background-color: hsl(265, 73%, 49%);
+}
+
+.card{
+    background:linear-gradient(180degrees ,hsl(191, 75%, 62%) ,hsl(300, 80%, 59%));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+h1{
+    color: hsl(0, 76%, 63%);
+    font-size: 2rem;
+    
+}
+    
+p{
+    color: hsl(9, 85%, 61%);
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.cityinput, .tempdisplay{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: hsl(341, 93%, 61%);
+}
+
+.humiditydisplay{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.descriptiondisplay{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.weathemoji{
+    margin: 0%;
+    font-size: 7rem;
+}
+
+.errordisplay{
+    font-size: 2rem;
+    font-weight: bold;
+    color: hsla(313, 92%, 67%, 0.062);
+}
